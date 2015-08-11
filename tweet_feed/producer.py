@@ -27,7 +27,7 @@ class Producer:
                                       self.EXCHANGE_TYPE,
                                       passive=False,
                                       durable=True,
-                                      auto_delete=True)
+                                      auto_delete=False)
 
     def send_msg(self, msg_obj):
 
