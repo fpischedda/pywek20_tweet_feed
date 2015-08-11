@@ -1,11 +1,11 @@
 Tweet Feed
 ==========
 
-Tweet Feed is a simple application that uses the Twitter's streaming api in 
+Tweet Feed is a simple application that uses Twitter's streaming api in 
 order to feed data to my pyweek20 entry.
 
 All tweets are parsed and sent as json to an AMQP fan out exchange, game
-clients binds a queue the the exchange in order to use the streaming data and
+clients binds a queue to the exchange in order to use the streaming data and
 create game entities.
 
 Running the demon
