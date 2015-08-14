@@ -43,5 +43,5 @@ auth.set_access_token(settings.ACCESS_TOKEN, settings.ACCESS_SECRET)
 
 publisher = Producer(settings.BROKER_URL)
 twitterStream = Stream(auth, Listener(publisher))
-track = ["#BadWeddingVows", "#python", "#django", "#mobile"]
+track = ["#pyweek20", "#pyweek", "#python", "#django", "#mobile"]
 twitterStream.filter(track=track, async=True)
