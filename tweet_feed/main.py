@@ -28,8 +28,12 @@ class Listener(StreamListener):
 
     def on_data(self, data):
 
-        parsed = parse_data(data)
-        self.publisher.send_msg(parsed)
+        try:
+            parsed = parse_data(data)
+            self.publisher.send_msg(parsed)
+        except Exception as e:
+            print("exception: {exception}".format(exception=e))
+
         return True
 
     def on_exception(self, exception):
