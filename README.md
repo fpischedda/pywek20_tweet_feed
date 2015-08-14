@@ -19,6 +19,9 @@ Prerequisites:
 - install dependencies using pip install -r requirements.txt (use tools such as
   virtualenv to create a clean working environment)
 
+please note that if you want to use python 3 you have to install pika-python3 dependency with the following command:
+pip install -U git+https://github.com/renshawbay/pika-python3.git
+
 Running the service:
 - run python main.py 
 - if you inspect the rabbitmq web console you should see some traffic on
